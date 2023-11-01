@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-ut4c
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-kifa-tenant/mc-quality-dashboard/backend-quality-dashboard-ut4c@sha256:85e7a9d62e925a5d196915612ab88b05d09e45eec8cac7f97c207063df125113
+        name: quality-backend-dashboard
+        resources: {}
+status: {}
